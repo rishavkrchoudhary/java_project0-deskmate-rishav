@@ -9,8 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import com.deskmate.constants.BookingStatus;
 import com.deskmate.dao.DeskDao;
 import com.deskmate.exception.DatabaseOperationException;
+import com.deskmate.model.Booking;
 import com.deskmate.model.Desk;
 import com.deskmate.utils.DbConnectionFactory;
 
@@ -98,4 +100,5 @@ public class JdbcDeskDao implements DeskDao {
                 rs.getTimestamp("created_at").toLocalDateTime()
         );
     }
+
 }
