@@ -24,5 +24,4 @@ public class AppConfig {
         ReportService reportService = new ReportService(reportDao);
         return new ReportController(reportService);
     }
-
 }
