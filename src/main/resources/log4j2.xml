@@ -12,13 +12,13 @@
 
     <Loggers>
         <!-- Flow logger -->
-        <Logger name="com.deskmate.dbps" level="info" additivity="false">
+        <Logger name="com.deskmate" level="info" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Logger>
 
         <!-- DB logger -->
-        <Logger name="com.deskmate.dbps.dao" level="error" additivity="false">
+        <Logger name="com.deskmate.dao" level="error" additivity="false">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="File"/>
         </Logger>
